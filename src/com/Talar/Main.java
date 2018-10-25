@@ -1,14 +1,14 @@
 package com.Talar;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        Player player = new Player();
-        player.setName("");
-        player.setName(null);
+        //Player player = new Player("Plejer");
+        Player player = new PlayerComp("Plejer");
 
         boolean gameResult = false;
         int generatedNumber;

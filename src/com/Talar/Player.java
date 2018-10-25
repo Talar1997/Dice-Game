@@ -1,9 +1,15 @@
 package com.Talar;
 import java.util.Random;
 
-public class Player {
+public abstract class Player {
     private String name = "Domyslny player";
-    Random rand = new Random();
+    final Random rand = new Random();
+
+    public Player(){}
+
+    public Player(String name){
+        setName(name);
+    }
 
     public String getName() {
         return name;
@@ -15,7 +21,5 @@ public class Player {
         }
     }
 
-    public int guess() {
-        return rand.nextInt(6) + 1;
-    }
+    public abstract int guess();
 }
