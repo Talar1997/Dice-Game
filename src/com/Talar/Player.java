@@ -16,8 +16,12 @@ public abstract class Player {
     }
 
     public void setName(String name) {
-        if(name != null && !name.isEmpty()) {
+        String regEx = "^[a-zA-Z][a-zA-Z0-9_\\-.@]{2,29}$";
+        if(name != null && name.matches(regEx)) {
             this.name = name;
+        }
+        else{
+            throw new IllegalArgumentException("Imie puste, null lub niezgodne ze wzorem");
         }
     }
 

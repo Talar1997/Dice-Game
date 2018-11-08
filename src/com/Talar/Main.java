@@ -7,8 +7,14 @@ public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        //Player player = new Player("Plejer");
-        Player player = new PlayerComp("Plejer");
+        //Player player = new Player("Nickname");
+        Player player = new PlayerComp("adam997@.");
+
+        try{
+            player.setName("111ssss");
+        }catch(IllegalArgumentException ex) {
+            System.err.println(ex.getMessage());
+        }
 
         boolean gameResult = false;
         int generatedNumber;

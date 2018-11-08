@@ -14,5 +14,4 @@ public class PlayerHuman extends Player {
         System.out.print("Podaj liczbe: ");
         return read.nextInt();
     }
-
 }
