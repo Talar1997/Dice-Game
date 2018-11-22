@@ -2,7 +2,7 @@ package com.Talar;
 import java.util.Random;
 
 public abstract class Player {
-    private String name = "Domyslny player";
+    private String name = "Domyslny players";
     final Random rand = new Random();
 
     public Player(){}

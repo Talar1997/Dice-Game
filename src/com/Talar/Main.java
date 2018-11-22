@@ -7,10 +7,10 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
-//        Player player = new PlayerComp("adam997@.");
+//        Player players = new PlayerComp("adam997@.");
 //        Sprawdzanie wyjatkow:
 //        try{
-//            player.setName("111ssss");
+//            players.setName("111ssss");
 //        }catch(IllegalArgumentException ex) {
 //            System.err.println(ex.getMessage());
 //        }
@@ -31,8 +31,14 @@ public class Main {
 
 
         Game game = new Game();
+        game.addPlayer(new PlayerComp("Gracz1"));
         game.addPlayer(new PlayerComp("Talar"));
-        game.addPlayer(new PlayerComp("Maliniak"));
+        game.addPlayer(new PlayerComp("Usun"));
+        game.showPlayerList();
+
+        game.removePlayer("Usun");
+        game.showPlayerList();
+
         game.startGame();
     }
 }
