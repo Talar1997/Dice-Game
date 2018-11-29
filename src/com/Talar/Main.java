@@ -1,8 +1,8 @@
 package com.Talar;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Iterator;
+import com.Talar.Players.PlayerComp;
+import com.Talar.Statistics.Statistics;
+import com.Talar.Statistics.WinStatistics;
 
 public class Main {
 
@@ -29,9 +29,9 @@ public class Main {
 //            System.out.println(it.next());
 //        }
 
-
+        Statistics stats = new WinStatistics();
         Game game = new Game();
-        game.addPlayer(new PlayerComp("Gracz1"));
+        game.addPlayer(new PlayerComp("Adrian"));
         game.addPlayer(new PlayerComp("Talar"));
         game.addPlayer(new PlayerComp("Usun"));
         game.showPlayerList();
@@ -40,5 +40,6 @@ public class Main {
         game.showPlayerList();
 
         game.startGame();
+        stats.showStats();
     }
 }

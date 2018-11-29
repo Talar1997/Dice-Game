@@ -1,4 +1,4 @@
-package com.Talar;
+package com.Talar.Players;
 
 public class PlayerComp extends Player {
     public PlayerComp() { }

@@ -1,4 +1,4 @@
-package com.Talar;
+package com.Talar.Players;
 import java.util.Scanner;
 
 public class PlayerHuman extends Player {
